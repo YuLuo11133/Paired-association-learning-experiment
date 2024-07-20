@@ -1,0 +1,131 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+#instruction p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-indent: 2em;
+    font-size: 25px;
+    font-family: '宋体';
+    margin-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    visibility: hidden;
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    order:1;
+    flex-grow: 2;
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    order:2;
+}
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#P1, #S1 {
+    width: 180px;
+    height: 180px;
+}
+.small-position {
+    width: 70px;
+    height: 70px;
+}
+.grid-container {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid #000;
+}
+.grid-item {
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+.highlight {
+    outline: 3px solid black;
+    box-shadow: 0 0 0 1px black;
+}
+.correct-highlight {
+    outline: 3px solid black;
+    box-shadow: 0 0 0 1px black;
+}
+.house {
+    width: 60px;
+    height: 60px;
+}
+.p1-image {
+    width: 80%;
+    height: 80%;
+}
+#message {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+#feedback {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.middle-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.bottom-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
