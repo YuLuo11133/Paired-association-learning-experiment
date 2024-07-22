@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="ch"> <!-- 声明文档类型为 HTML5，设置语言为中文 -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>配对联想学习实验Part2</title>
-    <link rel="stylesheet" href="./styles2/exp2.css">
+    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 兼容模式设置，确保在IE中以最新版本渲染 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，确保响应式设计 -->
+    <title>配对联想学习实验Part2</title> <!-- 网页标题 -->
+    <link rel="stylesheet" href="./styles2/exp2.css"> <!-- 引入外部CSS样式文件 -->
 </head>
 <body>
-    <div id="content">
-        <div id="observation-content" class="container">
-            <div class="left-container">
-                <div class="top-container">
+    <div id="content"> <!-- 包含整个页面内容的主容器 -->
+        
+        <h1 id="head"></h1> <!-- 指导语标题 -->
+        <div id="instruction"></div> <!-- 指导语文字内容 -->
+        
+        <div id="observation-content" class="container"> <!-- 观察任务页面的容器 -->
+            <div class="left-container"> <!-- 左侧容器 -->
+                <div class="top-container"> <!-- 左侧顶部（第一行）容器 -->
                     <div id="P1" class="position"></div>
                 </div>
-                <div class="middle-container">
+                <div class="middle-container"> <!-- 左侧中部（第二行）容器 -->
                     <div id="P2" class="small-position position"></div>
                     <div id="P3" class="small-position position"></div>
                     <div id="P4" class="small-position position"></div>
                 </div>
-                <div class="bottom-container">
+                <div class="bottom-container"> <!-- 左侧底部（第三行）容器 -->
                     <div id="P5" class="small-position position"></div>
                     <div id="P6" class="small-position position"></div>
                 </div>
             </div>
-            <div id="P7" class="grid-container right-container"></div>
+            <div id="P7" class="grid-container right-container"></div> <!-- 右侧网格地图容器 -->
         </div>
-
-        <h1 id="head"></h1>
-        <div id="instruction"></div>
         
-        <div id="selection-content" class="container" style="display: none;">
-            <div class="left-container">
-                <div class="top-container">
+        <div id="selection-content" class="container" style="display: none;"> <!-- 选择任务页面的容器，初始隐藏 -->
+            <div class="left-container"> <!-- 左侧容器 -->
+                <div class="top-container"> <!-- 左侧顶部（第一行）容器 -->
                     <div id="S1" class="position"></div>
                 </div>
-                <div class="middle-container">
+                <div class="middle-container"> <!-- 左侧中部（第二行）容器 -->
                     <div id="S2" class="small-position position"></div>
                     <div id="S3" class="small-position position"></div>
                     <div id="S4" class="small-position position"></div>
                 </div>
-                <div class="bottom-container">
+                <div class="bottom-container">  <!-- 左侧底部（第三行）容器 -->
                     <div id="S5" class="small-position position"></div>
                     <div id="S6" class="small-position position"></div>
                 </div>
             </div>
-            <div id="S7" class="grid-container right-container"></div>
+            <div id="S7" class="grid-container right-container"></div> <!-- 右侧网格地图容器 -->
         </div>
     </div>
-    <div id="feedback"></div>
-    <div id="message">+</div>
-    <script src="./scripts2/exp2.js"></script>
+    <div id="feedback"></div> <!-- 反馈文字格式 -->
+    <div id="message">+</div> <!-- 注视点'+'格式 -->
+    <script src="./scripts2/exp2.js"></script> <!-- 引入外部JS脚本文件 -->
 </body>
 </html>
