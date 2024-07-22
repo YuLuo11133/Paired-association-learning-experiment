@@ -1,55 +1,55 @@
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: center; /* 子元素垂直居中 */
+    margin: 0; /* 去除外边距 */
+    padding: 0; /* 去除内边距 */
+    width: 100%; /* 占据父元素100%的宽度 */
+    height: 100vh; /* 占据视口高度 */
+    overflow: hidden; /* 隐藏溢出内容 */
 }
 
 #head {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
+    align-items: start; /* 子元素水平靠左 */
+    justify-content: center; 
+    text-align: center; /* 文本居中 */
+    font-size: 50px; /* 字体大小 */
 }
 #instruction p {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    text-indent: 2em;
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; /* 文本左对齐 */
+    text-indent: 2em; /* 首行缩进 */
     font-size: 25px;
-    font-family: '宋体';
-    margin-bottom: 1em;
+    font-family: '宋体'; /* 字体 */
+    margin-bottom: 1em; /* 底部外边距 */
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    visibility: hidden;
+    flex-wrap: wrap; /* 子元素换行 */
+    height: 100vh; /* 占据视口高度 */
+    visibility: hidden; /* 隐藏容器 */
 }
 .left-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    order:1;
-    flex-grow: 2;
+    margin-right: 20px; /* 右外边距 */
+    order:1; /* 排序优先级 */
+    flex-grow: 2; /* 弹性增长 */
 }
 .right-container {
     display: flex;
     align-items: center;
-    order:2;
+    order:2; /* 排序优先级 */
 }
 .position {
     display: flex;
@@ -68,12 +68,12 @@
     height: 70px;
 }
 .grid-container {
-    position: relative;
+    position: relative; /* 相对定位 */
     width: 450px;
     height: 450px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr); /* 6列等分 */
+    grid-template-rows: repeat(6, 1fr); /* 6行等分 */
     border: 1px solid #000;
 }
 .grid-item {
@@ -82,8 +82,8 @@
     position: relative;
 }
 .highlight {
-    outline: 3px solid black;
-    box-shadow: 0 0 0 1px black;
+    outline: 3px solid black; /* 外轮廓 */
+    box-shadow: 0 0 0 1px black; /* 阴影 */
 }
 .correct-highlight {
     outline: 3px solid black;
@@ -100,11 +100,11 @@
 #message {
     text-align: center;
     font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 距顶部50% */
+    left: 50%; /* 距左侧50% */
     transform: translate(-50%, -50%);
-    visibility: hidden;
+    visibility: hidden; /* 隐藏 */
 }
 #feedback {
     text-align: center;
