@@ -79,7 +79,7 @@ function clearCorrectHighlight() {
     highlightedCells.forEach(cell => cell.classList.remove('correct-highlight'));
 }
 
-//小人和房屋配对
+//创建小人和地图中房屋配对关系
 function displayCharacters(mode) {
     if (remainingCharacters.length === 0) {
         remainingCharacters = shuffle([...characters]);
@@ -109,7 +109,7 @@ function displayCharacters(mode) {
     }
 }
 
-//创建房屋地图网格
+//创建房屋地图坐标网格
 function createGrid(mode) {
     const P7 = mode === 'observation' ? document.getElementById('P7') : document.getElementById('S7');
     for (let row = 1; row <= 6; row++) {
@@ -131,7 +131,7 @@ function createGrid(mode) {
         }
     }
 }
-//3.2小人和房屋配对关系呈现
+//小人和房屋配对关系呈现
 function runObservationTrial() {
     observationContent.style.visibility = 'hidden';
     message.style.visibility = 'visible';
@@ -151,8 +151,8 @@ function runObservationTrial() {
         }
     }, messageDuration);
 }
-//4.小人和房屋对应关系选择
-    //4.1指导语
+//小人和房屋对应关系选择
+    //指导语
 const SelectInstruction = function() {
     const headtext4 = "选择任务";
     const instructiontext4 = `
@@ -171,14 +171,14 @@ const SelectInstruction = function() {
             startSelectionTask();
     }
 }
-    //4.2开始选择任务
+    //开始选择任务
 function startSelectionTask() {
     selectionMode = true;
     observationContent.style.display = 'none';
     selectionContent.style.display = 'flex';
     runSelectionTrial();
 }
-    //运行选择试验
+    //选择试验
 function runSelectionTrial() {
     selectionContent.style.visibility = 'hidden';
     message.style.visibility = 'visible';
@@ -242,7 +242,7 @@ function proceedToNextTrial() {
     }
 }
 
-//5.实验结束
+//实验结束
 function endInstruction() {
     content.innerHTML = ''; // 清空所有内容
     const endMessage = document.createElement('div');
