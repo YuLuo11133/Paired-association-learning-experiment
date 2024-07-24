@@ -47,12 +47,12 @@ const preparationInstruction = function() {
     //2.2刺激呈现
 const displayImages = function() {
     const images = [
-        './image/green.jpg',
-        './image/blue.jpg',
-        './image/cyan.jpg',
-        './image/vertical.jpg',
-        './image/horizontal.jpg',
-        './image/sloping.jpg'
+        './image1/green.jpg',
+        './image1/blue.jpg',
+        './image1/cyan.jpg',
+        './image1/vertical.jpg',
+        './image1/horizontal.jpg',
+        './image1/sloping.jpg'
     ];
 
         // 刺激顺序随机化
@@ -114,7 +114,7 @@ const observationTrial = function() {
         document.getElementById("head").innerText = "";
         document.getElementById("instruction").innerHTML = "";
         document.removeEventListener('keydown', hideInstruction);
-        window.location.href = './html/Exp_Part2.html'; // Redirect to Part2.html
+        window.location.href = './Exp_Part2/Exp_Part2.html'; // Redirect to Part2.html
     }
 };
 
